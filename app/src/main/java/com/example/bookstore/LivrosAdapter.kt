@@ -1,6 +1,7 @@
 package com.example.bookstore
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,19 +18,34 @@ class LivrosAdapter(c: Context, f: List<Book>) : BaseAdapter() {
     var books:List<Book> = f
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        var v = LayoutInflater.from(context).inflate(R.layout.inflaterlivro, parent, false)
-        var titulo = v.findViewById<TextView>(R.id.textInfTitle)
-        var autor = v.findViewById<TextView>(R.id.textInfAutor)
-        var ano = v.findViewById<TextView>(R.id.textAno)
-        var nota= v.findViewById<RatingBar>(R.id.textInfNota)
+        var holder:ViewHolder
+        var view:View
 
-        var image = v.findViewById<ImageView>(R.id.imageView)
+        if (convertView == null){
+            view = LayoutInflater.from(context).inflate(R.layout.inflaterlivro, parent, false)
+
+            holder = ViewHolder(view)
+            view.tag = holder
+        }else{
+            view = convertView
+            holder = convertView.tag as ViewHolder
+        }
+
 
         var livroAtual = books.get(position)
-        titulo.text = livroAtual.name
-        autor.text = livroAtual.author
-        nota.rating=livroAtual.note
-        return v
+        holder.titulo.text=livroAtual.name
+
+        holder.autor.text = livroAtual.author
+        holder.nota.rating=livroAtual.note
+
+        //Log.i("info","${livroAtual.lido}")
+
+//        if (livroAtual.lido) {
+//           image.setImageResource(R.drawable.livroaberto)
+//        } else {
+//            image.setImageResource(R.drawable.livroaberto)
+//        }
+        return view
 
     }
 

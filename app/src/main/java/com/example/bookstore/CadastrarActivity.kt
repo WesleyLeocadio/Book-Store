@@ -24,10 +24,10 @@ class CadastrarActivity : AppCompatActivity() {
 
         btnSalvar.setOnClickListener {
             db.bookDao().insert(Book(textName.text.toString(), textAuthor.text.toString(), textAno.text.toString().toInt(),
-                ratingBar.rating,R.drawable.livrofechado))
+                ratingBar.rating,R.drawable.livrofechado,false))
             Log.i("cadastro"," Livro Salvo"+"["+
                     Book(textName.text.toString(), textAuthor.text.toString(), textAno.text.toString().toInt(),
-                        ratingBar.rating,R.drawable.livrofechado) +"]")
+                        ratingBar.rating,R.drawable.livrofechado,false) +"]")
         }
 
         btnCancelar.setOnClickListener{

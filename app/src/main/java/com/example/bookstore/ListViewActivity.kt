@@ -27,9 +27,11 @@ class ListViewActivity : AppCompatActivity() {
         livros = db.bookDao().listAll()
         listview.adapter = LivrosAdapter(this, livros as List<Book>)
         listview.setOnItemClickListener{adapterView, view, i, l ->
-            var frutaSelecionada = livros?.get(i)
+            var livroSelecionado = livros?.get(i)
+            Toast.makeText(this, "${livroSelecionado?.name} id=${livroSelecionado?.id}", Toast.LENGTH_SHORT).show()
 
-    }
+
+        }
 
 
     }
