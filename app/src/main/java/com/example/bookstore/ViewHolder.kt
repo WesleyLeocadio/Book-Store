@@ -5,8 +5,9 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 
-class ViewHolder (v: View){
+class ViewHolder (v: View): RecyclerView.ViewHolder(v){
 
     val titulo: TextView
     val autor: TextView

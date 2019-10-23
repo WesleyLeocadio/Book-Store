@@ -42,8 +42,10 @@ dependencies {
     kapt 'android.arch.persistence.room:compiler:2.2.0-rc01'
 
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
-
-
+//Adicionar nas dependências a biblioteca do RecyclerView e
+//do Material Design.
+    implementation 'com.android.support:design:29.0.1'
+    implementation 'com.android.support:recyclerview-v7:29.0.1'
 
 
 }

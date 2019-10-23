@@ -37,6 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnRecyclerView.setOnClickListener {
+
+            startActivity(Intent(this, RecyclerActivity::class.java))
+
+        }
+
     }
 
 
