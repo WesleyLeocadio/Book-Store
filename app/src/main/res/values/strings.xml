@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Book Store</string>
+    <string name="cadastrar_livro">Cadastrar Livro</string>
+    <string name="autor">Autor</string>
+    <string name="ano">Ano</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="excluir">Excluir</string>
+    <string name="editar">Editar</string>
+    <string name="proximo">Próximo</string>
+    <string name="anterior">Anterior</string>
+    <string name="consultar_livros">Consultar Livros</string>
+</resources>
