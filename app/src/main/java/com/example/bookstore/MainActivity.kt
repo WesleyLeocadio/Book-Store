@@ -42,6 +42,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, RecyclerActivity::class.java))
 
         }
+        btnAutocomplete.setOnClickListener {
+            startActivity(Intent(this, AutoCompleteActivity::class.java))
+
+
+        }
 
     }
 

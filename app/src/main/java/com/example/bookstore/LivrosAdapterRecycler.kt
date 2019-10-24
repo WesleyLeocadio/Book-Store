@@ -11,7 +11,7 @@ class LivrosAdapterRecycler(c: Context, f: List<Book>) : RecyclerView.Adapter<Vi
     var books:List<Book> = f
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-        val view = LayoutInflater.from(context).inflate(R.layout.inflaterlivro, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.inflaterlivrocard, parent, false)
 
         return ViewHolder(view)
 

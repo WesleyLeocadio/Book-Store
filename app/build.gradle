@@ -47,5 +47,9 @@ dependencies {
     implementation 'com.android.support:design:29.0.1'
     implementation 'com.android.support:recyclerview-v7:29.0.1'
 
+//Gerenciador de Layout que permite exibir informações
+//dentro dos cartões. CARDVIEW
+    implementation 'com.android.support:cardview-v7:29.0.1'
+
 
 }
