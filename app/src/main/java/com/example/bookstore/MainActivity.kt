@@ -48,6 +48,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnPageView.setOnClickListener {
+            startActivity(Intent(this, PageViewActivity::class.java))
+
+
+        }
+
     }
 
 
