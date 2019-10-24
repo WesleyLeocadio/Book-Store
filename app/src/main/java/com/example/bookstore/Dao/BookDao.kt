@@ -31,4 +31,10 @@ interface BookDao {
     @Update
     fun atualizar(book: Book): Int
 
+
+    @Query("SELECT * FROM book")
+    fun listAll1(): MutableList<Book>
+
+
+
 }
