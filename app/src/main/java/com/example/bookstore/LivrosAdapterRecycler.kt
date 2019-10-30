@@ -26,7 +26,7 @@ class LivrosAdapterRecycler(c: Context, f: List<Book>) : RecyclerView.Adapter<Vi
 
         var livroAtual = books.get(position)
         holder.titulo.text=livroAtual.name
-
+        holder.img.setImageResource(R.drawable.livroaberto)
         holder.autor.text = livroAtual.author
         holder.nota.rating=livroAtual.note
 

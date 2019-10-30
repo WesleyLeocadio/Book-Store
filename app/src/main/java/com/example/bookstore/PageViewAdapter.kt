@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
 import android.view.LayoutInflater
 import android.widget.ImageView
+import android.widget.TextView
 import com.example.bookstore.domain.Book
 
 
@@ -19,6 +20,11 @@ class PageViewAdapter(var context:Context, var livros:List<Book>) : PagerAdapter
             .inflate(R.layout.livro_pageview_inflater, container, false)
         val img:ImageView = view.findViewById(R.id.imagemPersonagem)
         img.setImageResource(livros[position].img)
+        val nome:TextView = view.findViewById(R.id.textPageNome)
+        nome.text=livros[position].author
+        val ano:TextView = view.findViewById(R.id.textPageAno)
+        ano.text=livros[position].year.toString()
+
         container.addView(view)
 
         return view

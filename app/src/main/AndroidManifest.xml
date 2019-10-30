@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PageViewActivity"></activity>
+        <activity android:name=".SwipeDragDropActivityActivity"></activity>
+        <activity android:name=".PageViewActivity" />
         <activity android:name=".AutoCompleteActivity" />
         <activity android:name=".RecyclerActivity" />
         <activity android:name=".ListViewActivity" />

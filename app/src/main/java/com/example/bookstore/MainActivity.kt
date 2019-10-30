@@ -48,8 +48,13 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        btnPageView.setOnClickListener {
+        btnSSD.setOnClickListener {
             startActivity(Intent(this, PageViewActivity::class.java))
+
+
+        }
+        btnSSD.setOnClickListener {
+            startActivity(Intent(this, SwipeDragDropActivityActivity::class.java))
 
 
         }
